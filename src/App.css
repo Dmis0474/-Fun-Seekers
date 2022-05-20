@@ -1,0 +1,55 @@
+
+
+.app-wrapper {
+ display: grid; 
+ width: 1200px;
+
+ grid-template-areas: 
+ "h h "
+ "n c ";
+
+ grid-template-rows: 90px 1fr;
+ grid-template-columns: 2fr 10fr;
+ grid-gap: 5px;
+
+}
+
+.header {
+  grid-area: h;
+  background-image: url(https://img.freepik.com/free-vector/modern-colorful-pink-purple-dots-wide-banner-background-abstract-background-for-banner-design-web-banner-texture-and-header-for-website-vector-abstract-graphic-design-pattern-background-template_181182-17978.jpg);
+  background-size: cover;
+}
+
+.header img {
+  height: 90px;
+  
+}
+
+.nav {
+  grid-area: n;
+  background-image: url(https://kartinkin.net/src.php?src=https://kartinkin.net/uploads/posts/2021-07/thumbs/1625263653_37-kartinkin-com-p-krasivii-abstraktnii-fon-krasivie-foni-37.jpg&w=315&h=455);
+  padding-bottom: 500px;
+  
+}
+
+.content {
+ grid-area: c;
+ background-image: url(https://img.freepik.com/free-vector/colorful-modern-trendy-background-for-applications-or-presentations_95169-962.jpg);
+ background-size: cover;
+
+}
+
+.content__img {
+  width: 100%;
+}
+
+.content__menu {
+  display: flex;
+}
+
+.content__menu img {
+  width: 323px;
+  margin: 4px 3px 4px 5px;
+  border-radius: 7px;
+ 
+}
