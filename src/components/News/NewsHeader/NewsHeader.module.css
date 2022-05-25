@@ -1,0 +1,15 @@
+
+.content__img {
+    width: 100%;
+}
+
+.content__menu {
+    display: flex;
+}
+
+.content__menu img {
+    width: 323px;
+    margin: 4px 3px 4px 5px;
+    border-radius: 7px;
+
+}

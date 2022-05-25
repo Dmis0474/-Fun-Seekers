@@ -1,0 +1,11 @@
+.header {
+    grid-area: h;
+    background-image: url(https://img.freepik.com/free-vector/modern-colorful-pink-purple-dots-wide-banner-background-abstract-background-for-banner-design-web-banner-texture-and-header-for-website-vector-abstract-graphic-design-pattern-background-template_181182-17978.jpg);
+    background-size: cover;
+  }
+  
+  .header img {
+    height: 90px;
+    
+  }
+  
