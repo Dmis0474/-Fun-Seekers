@@ -1,12 +1,12 @@
 import React from "react";
-import style from './Dialogs.module.css'
+import style from './Profiles.module.css'
 
-let Dialogs = (props) => {
+let Profiles = (props) => {
     return (
         <div>
-            Dialogs
+            <h1>Мой профиль находится в разработке</h1>
         </div>
     )
 }
 
-export default Dialogs
+export default Profiles

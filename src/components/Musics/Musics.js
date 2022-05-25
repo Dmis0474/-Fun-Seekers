@@ -1,12 +1,12 @@
 import React from "react";
-import style from './Profiles.module.css'
+import style from './Musics.module.css'
 
-let Profiles = (props) => {
+let Musics = (props) => {
     return (
         <div>
-            Dialogs
+            <h1>Musics в обработке...</h1>
         </div>
     )
 }
 
-export default Profiles
+export default Musics

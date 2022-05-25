@@ -8,7 +8,7 @@ const Post = (props) => {
           <img src={props.img}></img>
           {props.text}
           <button>Like {props.likes}</button>
-          <button>DisLike{props.disLakes}</button>
+          <button>DisLike {props.disLakes}</button>
         </div>   
     )
 }

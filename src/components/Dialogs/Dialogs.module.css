@@ -1,11 +1,43 @@
-.header {
-    grid-area: h;
-    background-image: url(https://img.freepik.com/free-vector/modern-colorful-pink-purple-dots-wide-banner-background-abstract-background-for-banner-design-web-banner-texture-and-header-for-website-vector-abstract-graphic-design-pattern-background-template_181182-17978.jpg);
-    background-size: cover;
-  }
-  
-  .header img {
-    height: 90px;
-    
-  }
-  
+
+.dialogs {
+    display: flex;
+    justify-content: left;
+    background-image: url("https://oir.mobi/uploads/posts/2021-03/thumbs/1616988818_4-p-fon-dlya-prilozheniya-4.jpg");
+    min-height: 1124px;
+
+    background-repeat: no-repeat;
+
+}
+
+.dialog__items {
+    max-width: 600px;
+    margin-right: 30px;
+}
+.dialog {
+    margin: 15px;
+    color: #ffffff;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 15px;
+}
+
+.dialog__items .active {
+    color: gold;
+    text-decoration: none;
+}
+
+.messages {
+    background-color: white;
+    border-radius: 10px;
+    width: 680px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.message {
+    padding: 5px;
+}
+
+.nav {
+    text-decoration: none;
+}
+

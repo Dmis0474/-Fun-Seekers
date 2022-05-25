@@ -1,12 +1,12 @@
 import React from "react";
-import style from './Musics.module.css'
+import style from './Settings.module.css'
 
 let Settings = (props) => {
     return (
         <div>
-            <h1>Settings/h1>
+            <h1>Настройки - в разработке</h1>
         </div>
     )
 }
 
-export default Musics
+export default Settings
