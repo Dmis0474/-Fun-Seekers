@@ -3,11 +3,14 @@ import NewestPosts from './NewestPosts/NewestPosts.jsx';
 import NewsHeader from "./NewsHeader/NewsHeader";
 import style from './News.module.css'
 
-const News = () => {
+const News = (props) => {
+
     return <div className={style.content}>
         <NewsHeader/>
-        <NewestPosts/>
+        <NewestPosts Posts = {props.Posts}/>
     </div>
 }
 
+
 export default News
+

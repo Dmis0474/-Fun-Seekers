@@ -1,0 +1,21 @@
+.nav {
+    grid-area: n;
+    background-image: url(https://kartinkin.net/src.php?src=https://kartinkin.net/uploads/posts/2021-07/thumbs/1625263653_37-kartinkin-com-p-krasivii-abstraktnii-fon-krasivie-foni-37.jpg&w=315&h=455);
+    padding: 20px 0 500px 20px;
+    background-size: cover ;
+
+}
+
+.item .active {
+    color: gold;
+    text-decoration: none;
+}
+
+.item {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Caveat Brush', cursive;
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
