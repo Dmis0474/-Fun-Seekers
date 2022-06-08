@@ -1,8 +1,11 @@
 import React from 'react';
 import clasess from './Navigation.module.css'
 import {NavLink} from "react-router-dom";
+import Friends from "../Friends/Friends";
 
-const Navigation = () => {
+
+
+const Navigation = (props) => {
     return <nav className={clasess.nav}>
     <div className={clasess.item}>
      <NavLink to ="/profiles" className = {navData => navData.isActive ? clasess.active : clasess.item } >Моя страница</NavLink>
@@ -19,6 +22,7 @@ const Navigation = () => {
     <div className={clasess.item}>
     <NavLink to ="/settings" className = {navData => navData.isActive ? clasess.active : clasess.item} >Настройки</NavLink>
     </div>
+        <Friends friendList={props.state.friendsPage.friendList} />
   </nav>
 }
 

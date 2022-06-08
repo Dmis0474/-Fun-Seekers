@@ -1,16 +1,23 @@
 import React from 'react';
-import s from './Post.module.css'
+import style from './Friend.module.css'
 
-const Post = (props) => {
-  
+const Friend = (props) => {
+
+
+
     return (
-        <div className={s.item}>
-          <img src={props.img}></img>
-          {props.text}
-          <button>Like {props.likes}</button>
-          <button>DisLike {props.disLakes}</button>
-        </div>   
+            <div className={style.item}>
+                <div className={style.loader_wrapper}>
+                    <img src={props.img} className={style.img}></img>
+                    <div className={style.loader}>
+                        <div className={`${style.loader} ${style.inner}`}>
+                        </div>
+                    </div>
+                </div>
+              <div className={style.name}>{props.firstName}<br />{props.secondName}</div>
+            </div>
+
     )
 }
 
-export default Post
+export default Friend

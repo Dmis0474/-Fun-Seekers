@@ -1,12 +1,17 @@
 import React from "react";
-import style from './Musics.module.css'
+import style from './Friends.module.css'
+import Friend from "./Friend/Friend.jsx";
+import DialogsItem from "../Dialogs/DialogsItem/DialogsItem";
 
-let Musics = (props) => {
+const Friends = (props) => {
+
+    let friends = props.friendList.map( f => <Friend firstName = {f.firstName} secondName = {f.secondName} img ={f.img}/>);
+    // let Frs = props.friendList.map(f => <Friend firstName={f.firstName} secondName={f.secondName} img = {f.img} />)
     return (
-        <div>
-            <h1>Musics в обработке...</h1>
+        <div className={style.friends_list}>
+            {friends}
         </div>
     )
 }
 
-export default Musics
+export default Friends
