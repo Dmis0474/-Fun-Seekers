@@ -1,0 +1,9 @@
+.item {
+    color: aqua;
+    margin-bottom: 30px;
+}
+
+.item img {
+    width: 50px;
+    border-radius: 25px;
+}
