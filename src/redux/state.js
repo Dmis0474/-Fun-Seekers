@@ -1,4 +1,4 @@
-
+import {rerenderEntireTree} from '../render.js'
 
 let state = {
     dialogPage: {
@@ -48,7 +48,13 @@ let state = {
                 likes: '23',
                 disLakes: '123',
                 imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4rwX1Fm7PMZC4xx7HELaMnE7XOYaji9QFK8T7kbEmh6L5LyzB_1h96ejfy2pi4KqYT2c&usqp=CAU'
-            }
+            },
+        {
+          text: 'Здесь будут отображаться все новости',
+          likes: '23',
+          disLakes: '123',
+          imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4rwX1Fm7PMZC4xx7HELaMnE7XOYaji9QFK8T7kbEmh6L5LyzB_1h96ejfy2pi4KqYT2c&usqp=CAU'
+        }
         ]
     },
     friendsPage:{
@@ -60,5 +66,21 @@ let state = {
         ]
     }
 }
+
+
+
+export let addPost = (postMassage) => {
+  
+  let newPost = {
+    text: postMassage,
+    likes: '0',
+    disLakes: '0',
+    imgUrl: 'https://cdn.learnwoo.com/wp-content/uploads/2017/01/User-roles-and-capabilities_Creating-new-user.png'
+  };
+
+  state.postsPage.Posts.unshift(newPost)
+  rerenderEntireTree(state);
+}
+
 
 export default state

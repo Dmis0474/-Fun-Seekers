@@ -7,7 +7,7 @@ const News = (props) => {
 
     return <div className={style.content}>
         <NewsHeader/>
-        <NewestPosts Posts = {props.Posts}/>
+        <NewestPosts Posts = {props.Posts} addPost ={props.addPost}/>
     </div>
 }
 

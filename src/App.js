@@ -30,7 +30,7 @@ const App = (props) => {
                                 messagesData = {props.state.dialogPage.messagesData}/>}/>
                         <Route path="/musics" element={<Musics/>}/>
                         <Route path="/news"
-                               element={<News Posts = {props.state.postsPage.Posts}/>}/>
+                               element={<News Posts = {props.state.postsPage.Posts} addPost = {props.addPost}/>}/>
                         <Route path="/settings" element={<Settings/>}/>
 
                     </Routes>
